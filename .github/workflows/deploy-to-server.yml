@@ -7,7 +7,7 @@ jobs:
       steps:
       - name: Get Github action current IP
         id: ip
-        uses: haythem/public-ip@v1.3.0
+        uses: haythem/public-ip@v1.3
 
       - name: Add Github Actions IP to Security group
         run: |
