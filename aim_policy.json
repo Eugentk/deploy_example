@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "UpdateIngress",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:AuthorizeSecurityGroupIngress"
+            ],
+            "Resource": "arn:aws:ec2:your-region:your-account-id:security-group/your-security-group-id"
+        },
+        {
+            "Sid": "DescribeGroups",
+            "Effect": "Allow",
+            "Action": "ec2:DescribeSecurityGroups",
+            "Resource": "*"
+        }
+    ]
+}
